@@ -1,0 +1,74 @@
+[INFO] Initializing Shiro environment
+16:36:13.430 [main] INFO  o.a.shiro.web.env.EnvironmentLoader - Starting Shiro environment initialization.
+16:36:13.443 [main] DEBUG o.a.shiro.web.env.IniWebEnvironment - Checking any specified config locations.
+16:36:13.445 [main] DEBUG org.apache.shiro.io.ResourceUtils - Opening resource from class path [shiro-web.ini]
+16:36:13.454 [main] DEBUG org.apache.shiro.config.Ini - Parsing [main]
+16:36:13.463 [main] DEBUG org.apache.shiro.config.Ini - Parsing [filters]
+16:36:13.464 [main] DEBUG org.apache.shiro.config.Ini - Parsing [users]
+16:36:13.466 [main] DEBUG org.apache.shiro.config.Ini - Parsing [roles]
+16:36:13.467 [main] DEBUG org.apache.shiro.config.Ini - Parsing [urls]
+16:36:13.472 [main] DEBUG o.a.shiro.config.IniFactorySupport - Creating instance from Ini [sections=main,filters,users,roles,urls]
+16:36:13.654 [main] DEBUG o.a.shiro.config.ReflectionBuilder - Encountered object reference '$sessionIdCookie'.  Looking up object with id 'sessionIdCookie'
+16:36:13.675 [main] DEBUG o.a.shiro.config.ReflectionBuilder - Encountered object reference '$sessionManager'.  Looking up object with id 'sessionManager'
+16:36:13.677 [main] DEBUG o.a.shiro.config.ReflectionBuilder - Encountered object reference '$sessionListener1'.  Looking up object with id 'sessionListener1'
+16:36:13.679 [main] DEBUG o.a.shiro.config.ReflectionBuilder - Encountered object reference '$sessionListener2'.  Looking up object with id 'sessionListener2'
+16:36:13.690 [main] DEBUG o.a.shiro.config.ReflectionBuilder - Encountered object reference '$sessionIdGenerator'.  Looking up object with id 'sessionIdGenerator'
+16:36:13.691 [main] DEBUG o.a.shiro.config.ReflectionBuilder - Encountered object reference '$sessionDAO'.  Looking up object with id 'sessionDAO'
+16:36:13.697 [main] DEBUG o.a.shiro.config.ReflectionBuilder - Encountered object reference '$cacheManager'.  Looking up object with id 'cacheManager'
+16:36:13.703 [main] DEBUG o.a.shiro.config.ReflectionBuilder - Encountered object reference '$sessionManager'.  Looking up object with id 'sessionManager'
+16:36:13.704 [main] DEBUG o.a.shiro.config.ReflectionBuilder - Encountered object reference '$sessionValidationScheduler'.  Looking up object with id 'sessionValidationScheduler'
+16:36:13.707 [main] DEBUG o.a.shiro.config.ReflectionBuilder - Encountered object reference '$sessionFactory'.  Looking up object with id 'sessionFactory'
+16:36:13.717 [main] DEBUG org.apache.shiro.realm.text.IniRealm - Discovered the [roles] section.  Processing...
+16:36:13.720 [main] DEBUG org.apache.shiro.realm.text.IniRealm - Discovered the [users] section.  Processing...
+16:36:13.726 [main] DEBUG o.a.s.cache.ehcache.EhCacheManager - cacheManager property not set.  Constructing CacheManager instance...
+16:36:13.736 [main] DEBUG org.apache.shiro.io.ResourceUtils - Opening resource from class path [ehcache.xml]
+16:36:13.893 [main] DEBUG o.a.s.cache.ehcache.EhCacheManager - implicit cacheManager created successfully.
+16:36:13.897 [main] DEBUG o.a.shiro.config.IniFactorySupport - Creating instance from Ini [sections=main,filters,users,roles,urls]
+16:36:13.902 [main] WARN  o.a.s.w.c.IniFilterChainResolverFactory - The [filters] section has been deprecated and will be removed in a future release!  Please move all object configuration (filters and all other objects) to the [main] section.
+16:36:13.924 [main] DEBUG o.a.shiro.config.ReflectionBuilder - Encountered object reference '$sessionDAO'.  Looking up object with id 'sessionDAO'
+16:36:13.926 [main] WARN  org.apache.shiro.realm.text.IniRealm - Users or Roles are already populated.  Configured Ini instance will be ignored.
+16:36:13.928 [main] DEBUG org.apache.shiro.realm.text.IniRealm - Instance is already populated with users or roles.  No additional user/role population will be performed.
+16:36:13.932 [main] DEBUG o.a.s.w.f.m.DefaultFilterChainManager - Creating chain [/logout] from String definition [logout]
+16:36:13.934 [main] DEBUG o.a.s.w.f.m.DefaultFilterChainManager - Attempting to apply path [/logout] to filter [logout] with config [null]
+16:36:13.939 [main] DEBUG o.a.s.w.f.m.DefaultFilterChainManager - Creating chain [/login.jsp] from String definition [authc]
+16:36:13.940 [main] DEBUG o.a.s.w.f.m.DefaultFilterChainManager - Attempting to apply path [/login.jsp] to filter [authc] with config [null]
+16:36:13.942 [main] DEBUG o.a.s.w.f.m.DefaultFilterChainManager - Creating chain [/**] from String definition [anon]
+16:36:13.943 [main] DEBUG o.a.s.w.f.m.DefaultFilterChainManager - Attempting to apply path [/**] to filter [anon] with config [null]
+16:36:13.944 [main] DEBUG o.a.shiro.web.env.EnvironmentLoader - Published WebEnvironment as ServletContext attribute with name [org.apache.shiro.web.env.EnvironmentLoader.ENVIRONMENT_ATTRIBUTE_KEY]
+16:36:13.946 [main] INFO  o.a.shiro.web.env.EnvironmentLoader - Shiro environment initialized in 513 ms.
+[INFO] started o.m.j.p.JettyWebAppContext{/chapter10,file:/D:/GitMidi/apache_shiro/shiro-example/shiro-example-chapter10
+/src/main/webapp/},file:/D:/GitMidi/apache_shiro/shiro-example/shiro-example-chapter10/src/main/webapp/
+[INFO] Started SelectChannelConnector@0.0.0.0:8080
+[INFO] Started Jetty Server
+
+16:39:44.530 [qtp29510787-16] INFO  o.a.s.s.m.AbstractValidatingSessionManager - Enabling session validation scheduler...
+16:39:44.535 [qtp29510787-16] DEBUG o.a.shiro.web.servlet.SimpleCookie - Found 'sid' cookie value [2331849f-6c39-4f99-80c2-824a30b95e47]
+16:39:44.536 [qtp29510787-16] INFO  o.a.s.cache.ehcache.EhCacheManager - Using existing EHCache named [shiro-activeSessionCache]
+Apr 01, 2017 4:39:44 PM com.alibaba.druid.pool.DruidDataSource error
+SEVERE: testWhileIdle is true, validationQuery not set
+Apr 01, 2017 4:39:44 PM com.alibaba.druid.pool.DruidDataSource info
+INFO: {dataSource-1} inited
+
+16:43:08.909 [qtp29510787-18] DEBUG o.a.shiro.realm.AuthenticatingRealm - Looked up AuthenticationInfo [zhang] from doGe
+tAuthenticationInfo
+16:43:08.909 [qtp29510787-18] DEBUG o.a.shiro.realm.AuthenticatingRealm - AuthenticationInfo caching is disabled for inf
+o [zhang].  Submitted token: [org.apache.shiro.authc.UsernamePasswordToken - zhang, rememberMe=false (0:0:0:0:0:0:0:1)].
+
+16:43:08.910 [qtp29510787-18] DEBUG o.a.s.a.c.SimpleCredentialsMatcher - Performing credentials equality check for token
+Credentials of type [[C and accountCredentials of type [java.lang.String]
+16:43:08.910 [qtp29510787-18] DEBUG o.a.s.a.c.SimpleCredentialsMatcher - Both credentials arguments can be easily conver
+ted to byte arrays.  Performing array equals comparison
+16:43:08.910 [qtp29510787-18] DEBUG o.a.s.authc.AbstractAuthenticator - Authentication successful for token [org.apache.
+shiro.authc.UsernamePasswordToken - zhang, rememberMe=false (0:0:0:0:0:0:0:1)].  Returned account [zhang]
+16:43:08.910 [qtp29510787-18] DEBUG o.a.s.s.s.DefaultSubjectContext - No SecurityManager available in subject context ma
+p.  Falling back to SecurityUtils.getSecurityManager() lookup.
+16:43:08.910 [qtp29510787-18] DEBUG o.a.shiro.mgt.DefaultSecurityManager - Context already contains a session.  Returnin
+g.
+16:43:08.910 [qtp29510787-18] DEBUG o.a.s.s.s.DefaultSubjectContext - No SecurityManager available in subject context ma
+p.  Falling back to SecurityUtils.getSecurityManager() lookup.
+16:43:08.957 [qtp29510787-18] DEBUG o.a.shiro.web.servlet.SimpleCookie - Added HttpServletResponse Cookie [rememberMe=de
+leteMe; Path=/chapter10; Max-Age=0; Expires=Fri, 31-Mar-2017 08:43:08 GMT]
+16:43:08.957 [qtp29510787-18] DEBUG o.a.s.mgt.AbstractRememberMeManager - AuthenticationToken did not indicate RememberM
+e is requested.  RememberMe functionality will not be executed for corresponding account.
+16:43:08.965 [qtp29510787-19] DEBUG o.a.shiro.web.servlet.SimpleCookie - Found 'sid' cookie value [2331849f-6c39-4f99-80
+c2-824a30b95e47]
